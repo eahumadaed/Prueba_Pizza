@@ -5,11 +5,11 @@ class Pizza:
     vegetales = ['piña','tomate','champiñones','aceitunas'] #lista con vegetales
     t_masas = ['bordes de queso','delgada','tradicional'] #tipos de masa
     
-    def __init__(self,proteina,vegetal_1,vegetal_2,t_masa):
-        self.proteina = proteina
-        self.vegetal_1 = vegetal_1
-        self.vegetal_2 = vegetal_2
-        self.t_masa = t_masa
+    def __init__(self):
+        self.proteina = None
+        self.vegetal_1 = None
+        self.vegetal_2 = None
+        self.t_masa = None
         self.valida = False
         
     #metodos
@@ -20,11 +20,11 @@ class Pizza:
     
     #pedido
     def pedido(self):
-        print("\t******************************************")
+        print("\t*******************************************")
         print("\t* ¡Gracias por llamar a Pizzería Panucci's! *")
-        print("\t* ¿Qué ingredientes le gustaría para su   *")
-        print("\t* pizza hoy?                              *")
-        print("\t******************************************")
+        print("\t* ¿Qué ingredientes le gustaría para su    *")
+        print("\t* pizza hoy?                               *")
+        print("\t*******************************************")
         #Solicito que ingrese los datos
         self.proteina = input("Ingrediente proteina: ")
         self.vegetal_1 = input("Ingrediente Vegetal 1: ")

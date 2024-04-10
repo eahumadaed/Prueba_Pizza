@@ -11,9 +11,10 @@ print("Masas ",Pizza.t_masas)
 lista_ingredientes = ['salsa de tomate', 'salsa bbq']
 print("Prueba pizza Valida: ",Pizza.validar_ingrediente("salsa de tomate", lista_ingredientes))
 
+print("\n"*2)
 #instancia
 
-Pizza_pedido = Pizza("piña","pollo", "tomate", "tradicional")
+Pizza_pedido = Pizza()
 Pizza_pedido.pedido()
 
 
